@@ -33,6 +33,8 @@ public class Theatre implements Serializable {
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "theatre")
     private List<Screen> screens = new ArrayList<>();
 
+    public Theatre(){}
+
     public Theatre(String theatreName, Integer noOfScreen, Location location) {
         this.theatreName = theatreName;
         this.noOfScreen = noOfScreen;

@@ -54,6 +54,8 @@ public class MovieShow implements Serializable {
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "movieShow")
     private List<Booking> bookingList = new ArrayList<>();
 
+    public MovieShow(){}
+
     public MovieShow(String showName, LocalTime startTime, LocalTime endTime, Long totalSeat, Long availableSeat,
                      Long bookedSeat, Movie movie, Screen screen) {
         this.showName = showName;
