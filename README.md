@@ -15,15 +15,28 @@ Try with other city JABALPUR/BHOPAL
 
 ## GET: http://localhost:8888/book-your-show/api/v1/movie/Harry Potter 1
 movie name could be any word matching to movie. like 
-'Harry' would result to 'Harry Potter 1'
-'Har would result to 'Harry Potter 1'
-'Harry  Potter 2' would result to 'Harry Potter 2'
+- 'Harry' would result to 'Harry Potter 1'
+- 'Har' would result to 'Harry Potter 1'
+- 'Harry  Potter 2' would result to 'Harry Potter 2'
 
 below url can be tried
-GET: http://localhost:8888/book-your-show/api/v1/movie/Spider Man
-GET: http://localhost:8888/book-your-show/api/v1/movie/Pushpa
+- GET: http://localhost:8888/book-your-show/api/v1/movie/Spider Man
+- GET: http://localhost:8888/book-your-show/api/v1/movie/Pushpa
 
-
+## POST: http://localhost:8888/book-your-show/api/v1/book
+To Book a movie ticket hit the above url with below details
+{
+  "city":"INDORE",
+  "movieName":"Harry Potter 1",
+  "showId":"1",
+  "theatreId":"1",
+  "noOfSeat":"10",
+  "userVO":{
+    "username":"ajaykanojiya",
+    "contactNo":"9754173673",
+    "email":"ajaykanojiya@gmail.com"
+	}
+}
 
 
 
