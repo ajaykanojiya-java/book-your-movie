@@ -24,7 +24,7 @@ below url can be tried
 - GET: http://localhost:8888/book-your-show/api/v1/movie/Pushpa
 
 ## POST: http://localhost:8888/book-your-show/api/v1/book
-To Book a movie ticket hit the above url with below details
+To Book a movie ticket hit the above url with below details in request body
 {
   "city":"INDORE",
   "movieName":"Harry Potter 1",
