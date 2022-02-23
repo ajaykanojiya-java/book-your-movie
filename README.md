@@ -33,7 +33,7 @@ To Book a movie ticket hit the above url with below details in request body
   "noOfSeat":"10",
   "userVO":{
     "username":"ajaykanojiya",
-    "contactNo":"9754173673",
+    "contactNo":"987654321",
     "email":"ajaykanojiya@gmail.com"
 	}
 }
