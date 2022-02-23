@@ -24,19 +24,31 @@ below url can be tried
 - GET: http://localhost:8888/book-your-show/api/v1/movie/Pushpa
 
 ## POST: http://localhost:8888/book-your-show/api/v1/book
-To Book a movie ticket hit the above url with below details in request body
-{
-  "city":"INDORE",
-  "movieName":"Harry Potter 1",
-  "showId":"1",
-  "theatreId":"1",
-  "noOfSeat":"10",
-  "userVO":{
-    "username":"ajaykanojiya",
-    "contactNo":"987654321",
-    "email":"ajaykanojiya@gmail.com"
-	}
+- To Book a movie ticket hit the above url with below details in request body
+    - {
+          "city":"INDORE",
+          "movieName":"Harry Potter 1",
+          "showId":"1",
+          "theatreId":"1",
+          "noOfSeat":"10",
+          "userVO":{
+            "username":"ajaykanojiya",
+            "contactNo":"987654321",
+            "email":"ajaykanojiya@gmail.com"
+       }
 }
+
+- If user book seat more than or equal to 'user.discount.seat' then 'user.discount.rate'
+percentage discount will be given on total amount. Both fields are configured in 
+application.properties file
+    - user.discount.seat=3
+    - user.discount.rate=10 
+
+- Price for a seat can also be configured through properties file
+    - theatre.show.priceperseat=3
+      
+
+
 
 
 
